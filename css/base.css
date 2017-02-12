@@ -1,0 +1,51 @@
+/*初始化*/
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  /*兼容 webkit 内核*/
+  -webkit-box-sizing: border-box;
+  /*所有的盒子都采用内减模式*/
+  box-sizing: border-box;
+  /*去除移动端的点击高亮效果*/
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei", sans-serif, monospace;
+  color: #333;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+input {
+  border: none;
+  outline: none;
+  /* 清除表单在移动端浏览器默认的样式 ：阴影 3d */
+  -webkit-appearance: none;
+}
+/*公共样式*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+  display: block;
+}
